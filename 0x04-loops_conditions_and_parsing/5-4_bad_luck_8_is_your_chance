@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+#loops from 1 to 10 with "bad luck" on 4th loop, "good luck" on 8th loop
+#and "Best School" on other loops.
+
+c=1
+while [ $c -le 10 ]
+do
+	if [ "$c" -eq 4 ]
+	then
+		echo "bad luck"
+	elif [ "$c" -eq 8 ]
+	then
+		echo "good luck"
+	else
+		echo "Best School"
+	fi
+	((c++))
+done
